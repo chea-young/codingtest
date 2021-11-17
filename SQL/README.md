@@ -19,3 +19,21 @@
 ### 최대, 최소 MAX, MIN
 - 최대값: `SELECT MAX(컬럼) FROM 테이블;`
 - 최소값: `SELECT MIN(컬럼) FROM 테이블;`
+
+### JOIN
+- 두 개의 테이블 간의 컬럼 값들이 서로 정확하게 일치하는 경우, 사용되며 대부분 PK-FK 관계를 기반
+- 별칭 사용
+```
+SELECT S.id, G.grade
+FROM Student S, Grade G         
+WHERE S.id = G.id
+AND G.grade > 3.5;
+ORDER BY G.grade DESC;
+```
+- Non-EQUIJOIN 비등가 조인(같은 값을 갖지 않을 때 사용)
+    - "=" 연산자가 아닌, Between, >, >= 와 같은 연산자를 이용
+    ```
+    SELECT 테이블1.컬럼명, 테이블2.컬럼명
+    FROM 테이블1, 테이블2
+    WHERE 테이블1.컬럼명1 BETWEEN 테이블2.컬럼명1 AND 테이블2.컬럼명2;
+    ```

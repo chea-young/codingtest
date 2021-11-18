@@ -37,3 +37,10 @@ ORDER BY G.grade DESC;
     FROM 테이블1, 테이블2
     WHERE 테이블1.컬럼명1 BETWEEN 테이블2.컬럼명1 AND 테이블2.컬럼명2;
     ```
+- LEFT JOIN
+    -A값의 전체와, A의 KEY 값과 B KEY 값이 같은 결과
+    ```
+    SELECT ~~
+    FROM TABLE_A
+    LEFT JOIN TABLE_B ON TABLE_A.KEY = TABLE_B.KEY
+    ```

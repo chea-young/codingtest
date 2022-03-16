@@ -3,11 +3,22 @@
 
 ## 전체 목차
 ## 파이썬 알고리즘 문제풀이
-[기초편] 기초 다지기
-1. Why Kubernetes?
-2. VM vs Container
-3. VM vs Container
+[구현]코드 구현력 기르기
+1. K번째 약수 풀이
+2. K번째 수
+3. K번째 큰 수
 
+### 채점방법
+- AA.py로 설정한 후 채점 폴더에 넣으면 채점이 된다.
+- .exe 파일을 실행하면 된다.
+
+### 테스트 방법
+- input.txt를 작성한 후 python 파일에서 아래와 같이 불러온다.
+- 체줄 때는 주석 처리해야 한다.
+```
+imput sys
+sys.stdin = open("input.txt, "rt")
+```
 
 ### Reference 
   -  [인프런] 파이썬 알고리즘 문제풀이 (코딩테스트 대비) - 김태원

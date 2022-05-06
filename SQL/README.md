@@ -52,3 +52,7 @@ ORDER BY G.grade DESC;
 SELECT DISTINCT 칼럼1, 칼럼2
 SELECT COUNT(DISTINCT 칼럼1)
 ```
+
+### GROUP BY
+- 해당 칼럼으로 묶어서 데이터를 조회하기 위해 사용
+- GROUP BY로 조건을 줄 때에는 HAVING 절을 이용

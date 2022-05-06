@@ -11,6 +11,7 @@
 ### 조건절 WHERE
 - 하나의 기준열만 비교: `WHERE 기준열=비교하고 싶은 것`
 - 해당 조건이 아닌 경우: `WHERE NOT 기준열=비교하고 싶은 것`
+- NULL 검색: `WHERE 기준열 IS NOT NULL`
 - 문자열 검색: `WHERE 기준열 LIKE "*문자열*"`
 - 조건절
     - =, <=, >=
@@ -44,3 +45,10 @@ ORDER BY G.grade DESC;
     FROM TABLE_A
     LEFT JOIN TABLE_B ON TABLE_A.KEY = TABLE_B.KEY
     ```
+
+### DISTINCT
+- 원하는 컬럼을 나열하면 중복 값이 제거된 데이터를 가져오는 것이 가능
+```
+SELECT DISTINCT 칼럼1, 칼럼2
+SELECT COUNT(DISTINCT 칼럼1)
+```

@@ -56,3 +56,8 @@ SELECT COUNT(DISTINCT 칼럼1)
 ### GROUP BY
 - 해당 칼럼으로 묶어서 데이터를 조회하기 위해 사용
 - GROUP BY로 조건을 줄 때에는 HAVING 절을 이용
+
+### DATETIME
+- 시간을 나타내는 데이터 타입
+- HOUR(칼럼1) : 시간만 추출
+- YEAR(칼럼1) : 년도만 추출 

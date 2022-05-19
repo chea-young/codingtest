@@ -63,4 +63,15 @@ SELECT COUNT(DISTINCT 칼럼1)
 ### DATETIME
 - 시간을 나타내는 데이터 타입
 - HOUR(칼럼1) : 시간만 추출
-- YEAR(칼럼1) : 년도만 추출 
+- YEAR(칼럼1) : 년도만 추출
+
+### CASE
+```
+SELECT CASE WHEN col1 IS NULL THEN col2 
+            WHEN col1 = 10 THEN 100 
+            ELSE col1 END
+```
+
+### IF
+- `SELECT IF(col1 IS NULL, col2, col1): col1 값이 NULL이면 col2 값을 선택하고 만약 col1값이 NULL이 아니면 col1값을 선택
+- SELECT IFNULL(col1, col2): col1 값이 NULL이면 col2 값을 선택하고 만약 col1값이 NULL이 아니면 col1값을 선택

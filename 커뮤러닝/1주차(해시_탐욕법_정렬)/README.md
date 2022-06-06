@@ -54,3 +54,15 @@ def solution(participant, completion):
     - 크게 만드는 기준
         - 해당를 반복 시켰을 때 큰 수
 3. 그 수를 이어 붙인다.
+```
+def solution(numbers):
+    numbers = [str(x) for x in numbers] #O(n)
+    numbers.sort(key=lambda x : (x * 4)[:4], reverse=True) # O(nlogn)
+    
+    if numbers[0] == '0': # 원소가 0으로만 이루어져 있는 케이스가 있을 수 있기 때문에
+        answer = '0' #O(1)
+    else:
+        answer = ''.join(numbers) # O(n)
+    return answer
+
+```
